@@ -1,0 +1,66 @@
+/* General Styles */
+body.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Create Post Form Styles */
+.create-post-form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+.create-post-form textarea,
+.create-post-form input[type="password"],
+.create-post-form input[type="file"],
+.create-post-form button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-post-form button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-post-form button:focus,
+.create-post-form input[type="password"]:focus,
+.create-post-form input[type="file"]:focus,
+.create-post-form textarea:focus {
+  outline: 2px solid #6200ea;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.2);
+}
+
+.create-post-form button:hover {
+  background-color: #3700b3;
+}
